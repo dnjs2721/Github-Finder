@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body {
+    min-width: 650px;
+}
+@media (max-width: 650px) {
+    body {
+        overflow: scroll;
+    }
+}
+
+header {
+    background-color: rgb(70, 130, 231);
+}
+
+header p {
+    color: white;
+    padding: 10px 10px;
+}
+
+#search-container,
+.user-container,
+.repo-container,
+.contribution{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search-container {
+    display: flex;
+    flex-direction: column
+}
+
+#search-container h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#search-container p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+#search-container input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 3px 10px
+}
+
+.user-info-container {
+    display: flex;
+    margin-top: 3px;
+}
+
+.user-avatar{
+    width: 185px;
+    height: 185px;
+    margin-right: 10px;
+}
+
+.user-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.user-activities {
+    border-radius: 5px;
+    display: flex;
+    list-style-type: none;
+}
+
+.user-activities li {
+    margin-right: 3px;
+    font-size: 13px;
+    border-radius: 5px;
+    padding: 2px 5px;
+    color: white;
+}
+
+.PublicRepos{
+    background-color: rgb(70, 130, 231);
+}
+
+.PublicGists{
+    background-color: rgb(173, 181, 189);
+}
+
+.Followers {
+    background-color: rgb(18, 184, 121);
+}
+
+.Following {
+    background-color: rgb(31, 161, 182);
+}
+
+.user-personal-data {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.user-personal-data li {
+    padding: 4px;
+}
+
+
+.user-personal-data li:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-view-profile-button {
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(70, 130, 231);
+    border-radius: 15px;
+}
+
+.repo-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.repo-left-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.repo-left-section a{
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.repo-left-section span{
+    color: #ccc;
+    font-size: 11px;
+}
+
+.repo-right-section {
+    display: flex;
+}
+
+
+.repo-subs {
+    display: flex;
+    list-style-type: none;
+}
+
+.repo-subs li {
+    margin-right: 3px;
+    font-size: 13px;
+    border-radius: 5px;
+    padding: 2px 5px;
+    color: white;
+}
+
+.Stars{
+    background-color: rgb(70, 130, 231);
+}
+
+.Watchers{
+    background-color: rgb(173, 181, 189);
+}
+
+.Forks {
+    background-color: rgb(18, 184, 121);
+}
+
+#contribution-container {
+    justify-content: center;
+}
+
+.contribution img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
