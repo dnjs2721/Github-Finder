@@ -4,6 +4,7 @@ class GitHubFinder {
         this.userResultContainer = document.getElementById('user-result-container');
         this.repoResultContainer = document.getElementById('repo-result-container');
         this.contributionContainer = document.getElementById('contribution-container');
+        this.footer = document.getElementById('footer');
         this.searchInput = document.getElementById('search-input');
         this.searchInput.addEventListener('keypress', this.handleKeyPress.bind(this));
     }
@@ -26,6 +27,7 @@ class GitHubFinder {
         this.displayUserData(data);
         this.displayLatestReposData(data);
         this.displayContributionData(data);
+        this.footer.style.position ='relative';
     }
 
     displayUserData(data) {
